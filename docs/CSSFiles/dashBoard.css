@@ -1,0 +1,179 @@
+body{
+    background: linear-gradient(to right, black, rgb(1, 1, 215));
+}
+
+.dataContainers{
+    background-color: whitesmoke;
+    width: 80%;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border-radius: 20px;
+    
+}
+
+#innerContainer{
+    background-color: rgb(227, 235, 248);
+    width: 80%;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 5%;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 25px;
+}
+
+#userInfoContainer{
+    background-color: white;
+    width: 90%;
+    height: auto;
+    border-radius: 25px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 2px 5px black;
+}
+
+#icon{
+    border-radius: 50px;
+    border: 4px solid rgb(38, 48, 179);
+    margin: 5%;
+}
+
+#iconContainer{
+    width: fit-content;
+    height:auto;
+}
+
+#userNameContainer{
+    /*border: 2px solid black;*/
+    height: 100%;
+    width: fit-content;
+    margin-left: 5%;
+    align-content: center;
+
+    font-size: 200%;
+    text-align: left;
+    overflow:auto;
+}
+
+#index{
+    font-size: 60%;
+    line-height: 0.1;
+    
+}
+
+.title{
+    font-family: 'Inter', Courier, monospace;
+    font-size: 130%;
+}
+
+#content{
+   /* border: 2px solid black;****/
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.papers{
+    background-color: rgb(224, 247, 227);
+    width: 80%;
+    height: auto;
+    margin-top: 3%;
+    border: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 20px;
+    font-size: 150%;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#papersContainer{
+    max-width: 40%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+}
+
+.tryitButton{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 80%;
+    color: green;
+    box-shadow: 0 2px 5px black;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+}
+
+#rightDivTitle{
+    margin-top: 3%;
+    font-family: 'Inter', Courier, monospace;
+    font-weight: bold;
+    font-size: 150%;
+    width: 100%;
+}
+
+
+
+#users{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+.usersContainer{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: rgb(250, 226, 226);
+    border-radius: 25px;
+    min-width: 60%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    box-shadow: 0 2px 5px black;
+    /*border: 3px solid black;*/
+}
+
+.usersAvg{
+    text-align: center;
+    align-content: right;
+    align-items: right;
+    border: 3px solid black;
+    margin-left: 10%;
+    margin-right: 2%;
+    width: 100px;
+}
+
+.userIcon{
+    border-radius: 40px;
+    margin: 5%;
+    border: 2px solid black;
+}
+.users{
+    margin-left: 6%;
+    font-size: 100%;
+    text-align: left;
+    min-width: 40%;
+    border: 3px solid black;
+    
+}
+
+.userIndexes{
+    font-size: 50%;
+    line-height: 0.1;
+}
