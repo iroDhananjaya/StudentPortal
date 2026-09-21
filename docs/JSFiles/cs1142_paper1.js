@@ -262,3 +262,4 @@ let timerInterval = setInterval(() => {
 function resetTest(){
     window.location.reload();
 }
+

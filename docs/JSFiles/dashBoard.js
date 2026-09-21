@@ -1,99 +1,54 @@
-// dashBoard.js
 document.addEventListener("DOMContentLoaded", () => {
-    // Retrieve stored username from sessionStorage
     const logedUserName = sessionStorage.getItem("logedUserName");
 
-    if (logedUserName) {
-        console.log("Logged in user:", logedUserName);
-        const userName = document.getElementById("username");// On main Bar
-        const userIndex = document.getElementById("index");// On main Bar
-        const userIcon = document.getElementById("icon");// On main Bar
-
-        if(logedUserName.toLowerCase() == "dhananjaya"){
-            
-            const iroName = document.getElementById("iroName");
-            const iroIndex = document.getElementById("iroIndex");
-
-            userName.textContent = iroName.textContent;
-            userIndex.textContent = iroIndex.textContent;
-            userIcon.src = "../PicturesFolder/icon.jpg";
-            userIcon.style.width = "80px";
-            userIcon.style.height = "80px";
-            userIndex.style.fontSize = "50%";
-            userIndex.style.marginTop = "2%";
-            
-        }
-        else if(logedUserName.toLowerCase() == "sandaru"){
-            const sandaruName = document.getElementById("sandaruName");
-            const sandaruIndex = document.getElementById("sandaruIndex");
-
-            userName.textContent = sandaruName.textContent;
-            userIndex.textContent = sandaruIndex.textContent;
-            userIcon.src = "../PicturesFolder/sandaruIcon.jpg";
-            userIcon.style.width = "80px";
-            userIcon.style.height = "80px";
-            userIndex.style.fontSize = "50%";
-            userIndex.style.marginTop = "2%";
-        }
-        else if(logedUserName.toLowerCase() == "hasantha"){
-            const hasaName = document.getElementById("hasaName");
-            const hasaIndex = document.getElementById("hasaIndex");
-
-            userName.textContent = hasaName.textContent;
-            userIndex.textContent = hasaIndex.textContent;
-            userIcon.src = "../PicturesFolder/hasanthaIcon.jpg";
-            userIcon.style.width = "80px";
-            userIcon.style.height = "80px";
-            userIndex.style.fontSize = "50%";
-            userIndex.style.marginTop = "2%";
-        }
-        else if(logedUserName.toLowerCase() == "dineth"){
-            const dinethName = document.getElementById("dinethName");
-            const dinethIndex = document.getElementById("dinethIndex");
-
-            userName.textContent = dinethName.textContent;
-            userIndex.textContent = dinethIndex.textContent;
-            userIcon.src = "../PicturesFolder/LionFace.jpg";
-            userIcon.style.width = "80px";
-            userIcon.style.height = "80px";
-            userIndex.style.fontSize = "50%";
-            userIndex.style.marginTop = "2%";
-        }
-        else if(logedUserName.toLowerCase() == "janith"){
-            const janithName = document.getElementById("janithName");
-            const janithIndex = document.getElementById("janithIndex");
-
-            userName.textContent = janithName.textContent;
-            userIndex.textContent = janithIndex.textContent;
-            userIcon.src = "../PicturesFolder/soldier.jpg";
-            userIcon.style.width = "80px";
-            userIcon.style.height = "80px";
-            userIndex.style.fontSize = "50%";
-            userIndex.style.marginTop = "2%";
-        }
-        else if(logedUserName.toLowerCase() == "hansi"){
-            const hansiName = document.getElementById("hansiName");
-            const hansiIndex = document.getElementById("hansiIndex");
-
-            userName.textContent = hansiName.textContent;
-            userIndex.textContent = hansiIndex.textContent;
-            userIcon.src = "../PicturesFolder/ruhuna12.jpg";
-            userIcon.style.width = "80px";
-            userIcon.style.height = "80px";
-            userIndex.style.fontSize = "50%";
-            userIndex.style.marginTop = "2%";
-        }
-        else{
-            userName.textContent = "Welcome Guest! 😁";
-            userIndex.textContent = "";
-            userIcon.src = "../PicturesFolder/logo.webp";
-            userIcon.style.width = "80px";
-            userIcon.style.height = "80px";
-        }
-    } else {
-        // Optional: Redirect back to login if no session exists
+    if (!logedUserName) {
         alert("Please log in first.");
         window.location.href = "../index.html";
-        // "","guest","hansi"];
+        return;
+    }
+
+    console.log("Logged in user:", logedUserName);
+
+    // Target elements
+    const userName = document.getElementById("username");
+    const userIndex = document.getElementById("index");
+    const userIcon = document.getElementById("icon");
+
+    // Config map storing user data and fallback details
+    const userProfiles = {
+        dhananjaya: { nameId: "iroName", indexId: "iroIndex", icon: "../PicturesFolder/icon.jpg" },
+        sandaru:    { nameId: "sandaruName", indexId: "sandaruIndex", icon: "../PicturesFolder/sandaruIcon.jpg" },
+        hasantha:   { nameId: "hasaName", indexId: "hasaIndex", icon: "../PicturesFolder/hasanthaIcon.jpg" },
+        dineth:     { nameId: "dinethName", indexId: "dinethIndex", icon: "../PicturesFolder/LionFace.jpg" },
+        janith:     { nameId: "janithName", indexId: "janithIndex", icon: "../PicturesFolder/soldier.jpg" },
+        hansi:      { nameId: "hansiName", indexId: "hansiIndex", icon: "../PicturesFolder/ruhuna12.jpg" }
+    };
+
+    const userKey = logedUserName.toLowerCase().trim();
+    const profile = userProfiles[userKey];
+
+    if (profile) {
+        const nameElement = document.getElementById(profile.nameId);
+        const indexElement = document.getElementById(profile.indexId);
+
+        // Safe updates with optional chaining / fallbacks
+        if (userName && nameElement) userName.textContent = nameElement.textContent;
+        if (userIndex && indexElement) userIndex.textContent = indexElement.textContent;
+        if (userIcon) userIcon.src = profile.icon;
+    } else {
+        // Guest layout
+        if (userName) userName.textContent = "Welcome Guest! 😁";
+        if (userIndex) userIndex.textContent = "";
+        if (userIcon) userIcon.src = "../PicturesFolder/logo.webp";
+    }
+
+    // Apply shared icon styles once
+    if (userIcon) {
+        userIcon.style.width = "80px";
+        userIcon.style.height = "80px";
+    }
+    if (userIndex) {
+        userIndex.style.fontSize = "50%";
+        userIndex.style.marginTop = "2%";
     }
 });
