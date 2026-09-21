@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resetButton = document.getElementById("resetButton");
     const userNameInput = document.getElementById("userName");
     const passwordInput = document.getElementById("password");
+    const guestLogin = document.getElementById("guestLoginContainer");
     
 
     const userNames = ["dhananjaya", "sandaru", "hasantha", "dineth", "janith","guest","hansi","samadhi"];
@@ -36,6 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
     resetButton.addEventListener("click", () => {
         userNameInput.value = "";
         passwordInput.value = "";
+    });
+
+    guestLogin.addEventListener("click", ()=>{
+        window.alert("use guest as username and password");
     });
 });
 

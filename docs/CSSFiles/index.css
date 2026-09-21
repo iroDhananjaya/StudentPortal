@@ -123,6 +123,16 @@ p{
     background-color: rgb(229, 0, 0);
 }
 
+#guestLoginContainer{
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+
 #copyRight{
     margin-top: auto;
     font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, monospace;
@@ -172,5 +182,9 @@ p{
 
     #h2{
         color: rgb(152, 43, 43);
+    }
+
+    #guestLoginContainer{
+        margin-top: 5%;
     }
 }

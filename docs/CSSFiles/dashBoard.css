@@ -273,3 +273,41 @@ body{
     font-size: 150%;
     font-family: 'Roboto', Times, serif;
 }
+
+@media (max-width: 768px) and (orientation: portrait){
+    #headContainer{
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dataContainers{
+        width: 100%;
+        min-width: 100%;
+    }
+    #icon{
+        width: 20px;
+        height: 20px;
+        object-fit: cover; /* Fills the box and crops excess without stretching */
+        border-radius: 50%;
+    }
+    #username{
+        font-size: 55%;
+    }
+    .papers{
+        width: 70%;
+        margin-bottom: 5%;
+    }
+    #content{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dataContainers{
+        width: 100%;
+        height: auto;;
+    }
+    .userIndexes{
+        font-size: 70%;
+    }
+}
