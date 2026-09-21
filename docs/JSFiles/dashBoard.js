@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
         dhananjaya: { nameId: "iroName", indexId: "iroIndex", icon: "../PicturesFolder/icon.jpg" },
         sandaru:    { nameId: "sandaruName", indexId: "sandaruIndex", icon: "../PicturesFolder/sandaruIcon.jpg" },
         hasantha:   { nameId: "hasaName", indexId: "hasaIndex", icon: "../PicturesFolder/hasanthaIcon.jpg" },
-        dineth:     { nameId: "dinethName", indexId: "dinethIndex", icon: "../PicturesFolder/LionFace.jpg" },
+        dineth:     { nameId: "dinethName", indexId: "dinethIndex", icon: "../PicturesFolder/dinethIcon.jpg" },
         janith:     { nameId: "janithName", indexId: "janithIndex", icon: "../PicturesFolder/soldier.jpg" },
-        hansi:      { nameId: "hansiName", indexId: "hansiIndex", icon: "../PicturesFolder/ruhuna12.jpg" }
+        hansi:      { nameId: "hansiName", indexId: "hansiIndex", icon: "../PicturesFolder/ColoredLion.jpg" }
     };
 
     const userKey = logedUserName.toLowerCase().trim();
