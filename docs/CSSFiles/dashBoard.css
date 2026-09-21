@@ -1,3 +1,5 @@
+/*Developed By H.P.G.I.Dhananjaya for Git WebDev Crew*/
+
 body{
     background: linear-gradient(to right, black, rgb(1, 1, 215));
 }
@@ -33,6 +35,14 @@ body{
     font-family:'Pacifico', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     font-size: 200%;
     width: 100%;
+}
+
+#symbols{
+    /*border: 2px solid black;*/
+    width: 20%;
+    font-size: 150%;
+    align-items: center;
+    align-content: center;
 }
 
 .dataContainers{
@@ -113,6 +123,30 @@ body{
     font-size: 130%;
     margin-top: 0;
     font-weight: bold;
+}
+
+#joinPage{
+    /*border: 2px solid black;*/
+    height: auto;
+    width: 20%;
+    margin-left: 3%;
+    align-items: center;
+    align-content: center;
+    
+}
+
+#joinButton{
+    width: 60%;
+    height: 40%;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.389);
+    font-family: 'JetBrains', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+#joinButton:hover{
+    background-color: rgb(225, 231, 237);
 }
 
 #content{
@@ -224,8 +258,13 @@ body{
     border-radius: 25px;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
+    font-family: 'Roboto', Courier, monospace;
     
     box-shadow: 0 2px 5px black;
+}
+#timetableContainer:hover{
+    background-color: rgb(241, 242, 236);
 }
 #timetable{
     text-align: center;

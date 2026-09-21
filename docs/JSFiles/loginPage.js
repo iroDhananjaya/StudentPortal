@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const passwordInput = document.getElementById("password");
     
 
-    const userNames = ["dhananjaya", "sandaru", "hasantha", "dineth", "janith","guest","hansi"];
-    const passwords = ["dhananjaya123", "sandaru123", "hasantha123", "dineth123", "janith123","guest","hansi123"];
+    const userNames = ["dhananjaya", "sandaru", "hasantha", "dineth", "janith","guest","hansi","samadhi"];
+    const passwords = ["dhananjaya123", "sandaru123", "hasantha123", "dineth123", "janith123","guest","hansi123","samadhi123"];
 
     // Login Click Handler
     loginButton.addEventListener("click", () => {
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // 1. Save username to sessionStorage FIRST
             sessionStorage.setItem("logedUserName", enteredUser);
 
-            window.location.href = window.location.href='./HtmlFiles/dashBoard.html';
+            window.location.href='./HtmlFiles/dashBoard.html';
             
 
         } else {
