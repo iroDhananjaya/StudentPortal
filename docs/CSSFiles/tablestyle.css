@@ -38,7 +38,27 @@ th,td,thead{
     border: 1px solid rgb(45, 0, 0);
 }
 
+<<<<<<< HEAD
 .place{
     font-size: 14px;
     color: rgba(128, 0, 0, 0.645);
 }
+=======
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 720px;
+        font-size: 14px;
+    }
+
+    th, td, thead {
+        padding: 8px;
+    }
+}
+>>>>>>> 5e7420f936653a534176c85a389dac1e4b544df5
