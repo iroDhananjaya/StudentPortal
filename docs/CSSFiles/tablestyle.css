@@ -1,9 +1,12 @@
 body{
-    background-color: antiquewhite;
+    background-image: linear-gradient(rgba(250, 235, 215, 0.66)), url("../PicturesFolder/timetable.jpg");
+    background-size: cover;
+    /*background-color: antiquewhite;*/
 
 }
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px antiquewhite, 10px 10px 10px rgba(45, 0, 0, 0.77);
 }
 
 *{
@@ -14,6 +17,7 @@ h2{
 }
 
 table{
+    box-shadow: 2px 2px 20px antiquewhite, 10px 10px 30px rgba(45, 0, 0, 0.77);
     border-collapse: collapse;
     width: 90%;
     margin: auto;
@@ -32,4 +36,9 @@ th{
 th,td,thead{
     padding: 12px;
     border: 1px solid rgb(45, 0, 0);
+}
+
+.place{
+    font-size: 14px;
+    color: rgba(128, 0, 0, 0.645);
 }
