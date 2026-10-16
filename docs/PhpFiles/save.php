@@ -1,4 +1,5 @@
 <?php
+/* Coded by Dhananjaya For Git WebDev Crew */
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: ../HtmlFiles/main.html');
     exit();

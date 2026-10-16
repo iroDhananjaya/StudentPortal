@@ -1,3 +1,4 @@
+// Coded by Dhananjaya For Git WebDev Crew
 let timeInSeconds = 10 * 60; // 10 minutes in seconds
 let timerElement = document.getElementById("timmer");
 let isSubmitButtonPressed = false;
